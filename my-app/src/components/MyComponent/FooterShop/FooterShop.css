@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+.FooterShopConteiner{
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+    height: fit-content;
+    padding-left: calc(20/1920*100vw);
+    margin-top: calc(40/1920*100vw);
+    margin-bottom: calc(80/1920*100vw);
+}
+.FooterShopConteinerLogo {
+display: flex;
+flex-direction: column;
+justify-content: start;
+width: fit-content;
+height: fit-content;
+background-color: #EDEDF0;;
+border-radius: calc(8/1920*100vw);
+padding: calc(15/1920*100vw) calc(50/1920*100vw);
+justify-content: center;
+}
+.FooterShopAdress{
+width: calc(240/1920*100vw);
+height: calc(50/1920*100vw);
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: calc(20/1920*100vw);
+line-height: 150%;
+align-items: center;
+text-align: start;
+letter-spacing: 0.0075em;
+color: rgba(0, 0, 0, 0.87);
+}
+.FooterShopEmailAdress{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(20/1920*100vw);
+    line-height: 150%;
+    align-items: center;
+    text-align: start;
+    letter-spacing: 0.0075em;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 0;
+}
+.FooterShopNetworks{
+    margin: calc(20/1920*100vw) 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+}
+.FooterShopNetworksIcon{
+    align-items: center;
+    margin: 0 calc(10/1920*100vw) 0 0;
+    width:calc(30/1920*100vw);
+    height: calc(30/1920*100vw);
+}

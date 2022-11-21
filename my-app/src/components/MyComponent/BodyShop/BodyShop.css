@@ -1,0 +1,53 @@
+
+.BodyShop{
+    background-color: #0000ff;
+}
+
+
+.BodyShopCategoryConteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+.BodyShopCategoryButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: calc(4/1920*100vw) calc(4/1920*100vw) calc(4/1920*100vw) calc(4/1920*100vw);
+    background: #FFFFFF;
+    border-radius: calc(4/1920*100vw) calc(4/1920*100vw) 0px 0px;
+    width: fit-content;
+    height: calc(56/1920*100vw);
+    border: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(14/1920*100vw);
+    line-height: 143%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color:  #9696A0;
+    cursor: pointer;
+}
+.BodyShopCategoryButton:hover{
+    border: solid 2px #2979FF;
+}
+.BodyShopCategoryButton:focus {
+        border: solid 2px #2979FF;
+        color: #2979FF;   
+}
+.BodyShopCategoryButton:focus *{
+    fill:  #2979FF;
+}
+.BodyShopCategoryButtonImg {
+    width: calc(20/1920*100vw);
+    height: calc(17/1920*100vw);
+}
+.BodyShopCategoryButtonImg *{
+    fill:  #9696A0;
+}
