@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-Zaharyan-Sergei/static/css/main.0ff9d02d.css",
-    "main.js": "/4p22-final-project-Zaharyan-Sergei/static/js/main.7958ec09.js",
+    "main.css": "/4p22-final-project-Zaharyan-Sergei/static/css/main.0f39e80a.css",
+    "main.js": "/4p22-final-project-Zaharyan-Sergei/static/js/main.c579793d.js",
     "static/media/Diamond.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Diamond.086aaa9bbc45e535a26e54b66e451613.svg",
+    "static/media/Twitter.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Twitter.85a2b36db42b298dda20d4283262aa94.svg",
+    "static/media/Gmail.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Gmail.7d254a22fc2a8e18626adb803fe1145e.svg",
     "static/media/Hanger.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Hanger.4337bf07c93a8540479ecb7625db7647.svg",
     "index.html": "/4p22-final-project-Zaharyan-Sergei/index.html",
     "static/media/Vector.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Vector.5c0f0c1aee85c9e0b593779befbda6b2.svg",
+    "static/media/FaceBook.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/FaceBook.9285c1c9c4b13159c360c95a6e52d2bc.svg",
     "static/media/Delete.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Delete.006793c134c6d0f34edc.svg",
     "static/media/Electric.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Electric.e35b4761eea4453f494c391e78c4e988.svg",
-    "main.0ff9d02d.css.map": "/4p22-final-project-Zaharyan-Sergei/static/css/main.0ff9d02d.css.map",
-    "main.7958ec09.js.map": "/4p22-final-project-Zaharyan-Sergei/static/js/main.7958ec09.js.map"
+    "main.0f39e80a.css.map": "/4p22-final-project-Zaharyan-Sergei/static/css/main.0f39e80a.css.map",
+    "main.c579793d.js.map": "/4p22-final-project-Zaharyan-Sergei/static/js/main.c579793d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ff9d02d.css",
-    "static/js/main.7958ec09.js"
+    "static/css/main.0f39e80a.css",
+    "static/js/main.c579793d.js"
   ]
 }
