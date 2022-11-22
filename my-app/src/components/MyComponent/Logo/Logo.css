@@ -19,7 +19,7 @@
     padding-left: 0;
     padding-right: 0;
     background: linear-gradient(90deg, #2979FF 0%, #4C589E 100%);
-    border-radius: 6px;
+    border-radius: calc(6/1920*100vw);
 }
 .HederShopLogoText{
     margin-left: calc(12/1920*100vw);

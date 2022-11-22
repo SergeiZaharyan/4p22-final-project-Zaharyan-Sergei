@@ -2,14 +2,21 @@
 .BodyShop{
     background-color: #0000ff;
 }
-
-
+.BodyShopConteiner{
+width: 100vw;
+height: max-content;
+padding: 0 5vw 5vw 5vw;
+}
 .BodyShopCategoryConteiner{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
+}
+.BodyShopCardConteinerCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
 }
 .BodyShopCategoryButton{
     display: flex;
@@ -26,8 +33,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: calc(14/1920*100vw);
-    line-height: 143%;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.018em;
@@ -35,10 +40,10 @@
     cursor: pointer;
 }
 .BodyShopCategoryButton:hover{
-    border: solid 2px #2979FF;
+    border: solid calc(2/1920*100vw) #2979FF;
 }
 .BodyShopCategoryButton:focus {
-        border: solid 2px #2979FF;
+        border: solid calc(2/1920*100vw) #2979FF;
         color: #2979FF;   
 }
 .BodyShopCategoryButton:focus *{

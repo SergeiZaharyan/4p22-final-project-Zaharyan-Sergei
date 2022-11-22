@@ -1,6 +1,7 @@
 import "./HederShop.css";
 import ImgSearch from "../Img/Vector.svg";
 import {ReactComponent as ButtonImgSearch} from "../Img/Vector.svg";
+import {ReactComponent as ButtonImgBasket} from "../Img/Basket.svg"
 import Logo from "../Logo/Logo"
 
 function HederShop () {
@@ -16,6 +17,7 @@ function HederShop () {
                <button className="HederShopSearchButton"> <ButtonImgSearch alt="search" className="HederShopSearchButtonImg" /> </button>
             </div>
             <div className="HederShopLoginConteiner"> 
+               <button className="HederShoploginButton"><ButtonImgBasket className="HederShoploginButtonImg"  /></button> 
                <button className="HederShoploginButton">Sign in</button> 
                <button className="HederShoploginButton">Sign up</button>
             </div>

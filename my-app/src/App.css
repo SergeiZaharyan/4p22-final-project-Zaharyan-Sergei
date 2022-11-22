@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Quicksand:wght@700&family=Red+Hat+Display:wght@500;700&display=swap);
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
   text-align: center;
 }
 
