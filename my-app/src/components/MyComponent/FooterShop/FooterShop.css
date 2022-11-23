@@ -4,7 +4,7 @@
 .FooterShopConteiner{
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     padding-left: calc(20/1920*100vw);
     margin-top: calc(40/1920*100vw);

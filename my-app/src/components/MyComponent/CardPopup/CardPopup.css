@@ -1,13 +1,13 @@
 *{
     box-sizing: border-box;
 }
-.CardConteiner{
+.CardPopupConteiner{
     display: flex;
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    width: calc(258/1920*100vw);
-    height: calc(472/1920*100vw);
+    width: calc(480/1920*100vw);
+    height: calc(600/1920*100vw);
     box-shadow: 0px calc(2/1920*100vw) calc(4/1920*100vw) rgba(59, 69, 123, 0.2),
      0px calc(4/1920*100vw) calc(8/1920*100vw) rgba(92, 107, 192, 0.2);
     border-radius: calc(8/1920*100vw);
@@ -15,12 +15,12 @@
     margin: 0.5vw;
     cursor: pointer;
 }
-.CardImg{
+.CardPopupImg{
     width: calc(226/1920*100vw);
     height: calc(224/1920*100vw);
     border-radius: calc(4/1920*100vw);
 }
-.CardDescription{
+.CardPopupDescription{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -38,7 +38,7 @@
     color: #19191D;
     text-align: left;
 }
-.CardPrice{
+.CardPopupPrice{
     width: calc(226/1920*100vw);
     height: calc(36/1920*100vw);
     margin-top: calc(8/1920*100vw);
@@ -51,7 +51,7 @@
     color: rgba(0, 0, 0, 0.87);
     text-align: left;
 }
-.CardTitle{
+.CardPopupTitle{
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -70,13 +70,13 @@
     letter-spacing: 0.018em;
     color: #787885;
 }
-.CardDescription:hover{
+.CardPopupDescription:hover{
     color: #2264D1;
 }
-.CardTitle:hover{
+.CardPopupTitle:hover{
     color: #2264D1;
 }
-.CardButton{
+.CardPopupButton{
     width: calc(88/1920*100vw);
     height: calc(32/1920*100vw);
     margin-top: calc(19/1920*100vw);

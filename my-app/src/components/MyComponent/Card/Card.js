@@ -1,20 +1,20 @@
 import './Card.css';
-function Card() {
+import CardPopup from '../CardPopup/CardPopup';
+
+function Card(props) {
     return (
-            <>
             <div className="CardConteiner">
-            <img className="CardImg" src='' />
-            <p className="CardDescription">Props</p>
-            <h1 className="CardPrice">Props</h1>
-            <div className="CardTitle">Props</div>
+            <img className="CardImg" alt={props.title} src={props.image} />
+            <p className="CardDescription">{props.description}</p>
+            <h1 className="CardPrice">$ {props.price}</h1>
+            <div className="CardTitle">{props.title}</div>
             <button className="CardButton">$BUY</button>
             </div>
-            </>
-
-
-
-
     );
 }
 
 export default Card;
+
+Card.onclick = () => { <CardPopup />
+
+};

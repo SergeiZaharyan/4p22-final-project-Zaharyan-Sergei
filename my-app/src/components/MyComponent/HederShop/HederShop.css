@@ -1,7 +1,7 @@
 *{box-sizing: border-box;
 }
 .HederShopConteiner {
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;;
@@ -94,10 +94,13 @@
     margin-right: calc(20/1920*100vw);
 }
 .HederShoploginButton{
+    display: flex;
+    justify-content: center;
     width: calc(104/1920*100vw);
     height: calc(40/1920*100vw);
     border: calc(1/1920*100vw) solid #9DC2FF;
     margin-left: calc(15/1920*100vw);
+    padding: calc(1/1920*100vw) calc(6/1920*100vw);
     border-radius: calc(4/1920*100vw);
     background-color: white;
     font-family: 'Quicksand';
@@ -112,11 +115,18 @@
     cursor: pointer;
 
 }
-.HederShoploginButtonImg *{
+.HederShoploginButtonSize{
+    width: calc(52/1920*100vw);
+    height: calc(40/1920*100vw);
+}
+.HederShopBasketButtonImg {
     align-items: center;
     padding-left: 0;
     margin-left: 0;
-    width: calc(14/1920*100vw);
-    height: calc(14/1920*100vw);
+    width: calc(25/1920*100vw);
+    height: calc(25/1920*100vw);
+    
+}
+.HederShopBasketButtonImg *{
     stroke: #2979FF;
 }

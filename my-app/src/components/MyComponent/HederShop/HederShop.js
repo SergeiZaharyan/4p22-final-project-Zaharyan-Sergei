@@ -17,7 +17,7 @@ function HederShop () {
                <button className="HederShopSearchButton"> <ButtonImgSearch alt="search" className="HederShopSearchButtonImg" /> </button>
             </div>
             <div className="HederShopLoginConteiner"> 
-               <button className="HederShoploginButton"><ButtonImgBasket className="HederShoploginButtonImg"  /></button> 
+               <button className="HederShoploginButton HederShoploginButtonSize"><ButtonImgBasket className="HederShopBasketButtonImg"  /></button> 
                <button className="HederShoploginButton">Sign in</button> 
                <button className="HederShoploginButton">Sign up</button>
             </div>
