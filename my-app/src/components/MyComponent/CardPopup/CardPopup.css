@@ -9,11 +9,16 @@ bottom: 0;
 width: 100%;
 background: rgba(0,0,0, .2);
 backdrop-filter: blur(10px);
+overflow: hidden;
+height: 100vh;
+cursor: default;
+overscroll-behavior-y: contain;
 }
 .CardPopupClose{
     width: calc(20/1920*100vw);
     height: calc(20/1920*100vw);
     background-color: aqua;
+    cursor: pointer;
 }
 .CardPopupConteiner{
     display: flex;
