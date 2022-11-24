@@ -1,19 +1,35 @@
 *{
     box-sizing: border-box;
 }
+.CardPopupWrapper{
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+width: 100%;
+background: rgba(0,0,0, .2);
+backdrop-filter: blur(10px);
+}
+.CardPopupClose{
+    width: calc(20/1920*100vw);
+    height: calc(20/1920*100vw);
+    background-color: aqua;
+}
 .CardPopupConteiner{
     display: flex;
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    width: calc(480/1920*100vw);
+    width: calc(900/1920*100vw);
     height: calc(600/1920*100vw);
     box-shadow: 0px calc(2/1920*100vw) calc(4/1920*100vw) rgba(59, 69, 123, 0.2),
      0px calc(4/1920*100vw) calc(8/1920*100vw) rgba(92, 107, 192, 0.2);
     border-radius: calc(8/1920*100vw);
     padding: calc(16/1920*100vw);
-    margin: 0.5vw;
-    cursor: pointer;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #FFFFFF;
+    
 }
 .CardPopupImg{
     width: calc(226/1920*100vw);
@@ -92,4 +108,12 @@
     letter-spacing: 0.018em;
     color: #2264D1;
     cursor: pointer;
+}
+.CardPopupWrapper.open{
+    height: 100%;
+    display: block;
+}
+.CardPopupWrapper.close{
+    height: 0;
+    display: none;
 }

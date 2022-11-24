@@ -14,16 +14,47 @@ function BodyShop () {
                 setProducts(result);
             })
     }, []);
+    const [filtered, setFiltered] = useState(products);
+
+    useEffect( () => {
+            setFiltered(products)
+        }, [products]);
+
+    function todoFilter (category){
+        if(category === 'all'){
+            setFiltered(products)
+        }else {
+            let newProducts = [...products].filter(item => item.category === category)
+            setFiltered(newProducts)
+        };
+    }
      return (
         <div className="BodyShopConteiner">
             <div className="BodyShopCategoryConteiner"> 
-                <button className="BodyShopCategoryButton"><ImgCategoryElectric alt="Electric" className="BodyShopCategoryButtonImg" /> Clothing & Shoes</button>
-                <button className="BodyShopCategoryButton"><ImgCategoryHanger alt="Hanger" className="BodyShopCategoryButtonImg" />Electronics</button>
-                <button className="BodyShopCategoryButton"><ImgCategoryDiamond alt="Diamond" className="BodyShopCategoryButtonImg" />Jsewelry</button>
+            <button className="BodyShopCategoryButton" onClick= {() => todoFilter(`all`)}> ALL</button>
+                <button className="BodyShopCategoryButton"  onClick= {() => todoFilter(`women's clothing`)}>
+                    <ImgCategoryHanger alt="Hanger" className="BodyShopCategoryButtonImg" />
+                    Women's clothing
+                </button>
+
+                <button className="BodyShopCategoryButton" onClick= {() => todoFilter(`men's clothing`)}>
+                    <ImgCategoryHanger alt="Hanger" className="BodyShopCategoryButtonImg" />
+                    Men's clothing
+                </button>
+
+                <button className="BodyShopCategoryButton" onClick= {() => todoFilter('electronics')}>
+                    <ImgCategoryElectric alt="Electric" className="BodyShopCategoryButtonImg" />
+                    Electronics
+                </button>
+
+                <button className="BodyShopCategoryButton" onClick= {() => todoFilter('jewelery')}>
+                    <ImgCategoryDiamond alt="Diamond" className="BodyShopCategoryButtonImg" />
+                    Jsewelry
+                </button>
             </div>
             <div className="BodyShopCardConteinerCard"> 
            {
-           products.map((item) => {
+           filtered.map((item) => {
                 return <Card key={item.id}
                              title={item.title}
                              image={item.image}
