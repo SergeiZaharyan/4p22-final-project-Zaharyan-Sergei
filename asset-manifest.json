@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-Zaharyan-Sergei/static/css/main.264ad5d9.css",
-    "main.js": "/4p22-final-project-Zaharyan-Sergei/static/js/main.d43054a8.js",
+    "main.css": "/4p22-final-project-Zaharyan-Sergei/static/css/main.ef25fe17.css",
+    "main.js": "/4p22-final-project-Zaharyan-Sergei/static/js/main.5a2a885c.js",
     "static/media/Diamond.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Diamond.51edd56af53f5978ed4428fa22176827.svg",
     "static/media/Twitter.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Twitter.85a2b36db42b298dda20d4283262aa94.svg",
     "static/media/Gmail.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Gmail.7d254a22fc2a8e18626adb803fe1145e.svg",
@@ -10,13 +10,13 @@
     "static/media/Basket.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Basket.970ae18c578601810ba02fd2f4456d0d.svg",
     "static/media/Vector.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Vector.5c0f0c1aee85c9e0b593779befbda6b2.svg",
     "static/media/FaceBook.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/FaceBook.9285c1c9c4b13159c360c95a6e52d2bc.svg",
-    "static/media/Delete.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Delete.006793c134c6d0f34edc.svg",
+    "static/media/Delete.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Delete.006793c134c6d0f34edcfccec0795433.svg",
     "static/media/Electric.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Electric.e35b4761eea4453f494c391e78c4e988.svg",
-    "main.264ad5d9.css.map": "/4p22-final-project-Zaharyan-Sergei/static/css/main.264ad5d9.css.map",
-    "main.d43054a8.js.map": "/4p22-final-project-Zaharyan-Sergei/static/js/main.d43054a8.js.map"
+    "main.ef25fe17.css.map": "/4p22-final-project-Zaharyan-Sergei/static/css/main.ef25fe17.css.map",
+    "main.5a2a885c.js.map": "/4p22-final-project-Zaharyan-Sergei/static/js/main.5a2a885c.js.map"
   },
   "entrypoints": [
-    "static/css/main.264ad5d9.css",
-    "static/js/main.d43054a8.js"
+    "static/css/main.ef25fe17.css",
+    "static/js/main.5a2a885c.js"
   ]
 }
