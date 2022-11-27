@@ -6,9 +6,9 @@
     justify-content: space-around;
     width: 100%;
     height: fit-content;
-    padding-left: calc(20/1920*100vw);
     margin-top: calc(40/1920*100vw);
-    margin-bottom: calc(80/1920*100vw);
+    padding-bottom: calc(40/1920*100vw);
+    margin-bottom: 0;
 }
 .FooterShopConteinerLogo {
     display: flex;
@@ -67,4 +67,75 @@
     margin: 0 calc(10/1920*100vw) 0 0;
     width:calc(30/1920*100vw);
     height: calc(30/1920*100vw);
+}
+
+@media screen and (max-device-width: 768px){
+
+    .FooterShopConteiner{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: fit-content;
+        margin-top: calc(40/768*100vw);
+        padding-bottom: calc(40/768*100vw);
+        margin-bottom: 0;
+    }
+    .FooterShopConteinerLogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 30vw;
+        height: calc(250/768*100vw);
+        background-color: #EDEDF0;
+        border-radius: calc(8/768*100vw);
+        padding: calc(15/768*100vw);
+        justify-content: center;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(16/768*100vw);
+        text-align: start;
+        letter-spacing: 0.0075em;
+        color: rgba(0, 0, 0, 0.87);
+        box-shadow: 0px calc(2/768*100vw) calc(4/768*100vw) rgba(59, 69, 123, 0.2),
+         0px calc(4/768*100vw) calc(8/768*100vw) rgba(92, 107, 192, 0.2);
+    }
+    .FooterShopAdress{
+        width: calc(200/768*100vw);
+        height: calc(50/768*100vw);
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(17/768*100vw);
+        align-items: center;
+        text-align: start;
+        letter-spacing: 0.0075em;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    .FooterShopEmailAdress{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(20/768*100vw);
+        align-items: center;
+        text-align: start;
+        letter-spacing: 0.0075em;
+        color: rgba(0, 0, 0, 0.87);
+        padding: 0;
+    }
+    .FooterShopNetworks{
+        margin: calc(20/768*100vw) 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: flex-start;
+        width: fit-content;
+        height: fit-content;
+    }
+    .FooterShopNetworksIcon{
+        align-items: center;
+        margin: 0 calc(10/768*100vw) 0 0;
+        width:calc(30/768*100vw);
+        height: calc(30/768*100vw);
+    }
 }

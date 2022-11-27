@@ -30,3 +30,33 @@
     line-height: calc(36/1920*100vw);
     color: #0C2146;
 }
+@media screen and (max-device-width: 768px){
+    .HederShopLogo {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(32/768*100vw);
+        line-height: calc(36/768*100vw);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: calc(40/768*100vw);
+        height: calc(40/768*100vw);
+        padding-left: 0;
+        padding-right: 0;
+        background: linear-gradient(90deg, #2979FF 0%, #4C589E 100%);
+        border-radius: calc(6/768*100vw);
+    }
+    .HederShopLogoText{
+        margin-left: calc(12/768*100vw);
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(36/768*100vw);
+        line-height: calc(36/768*100vw);
+        color: #0C2146;
+    }
+
+}

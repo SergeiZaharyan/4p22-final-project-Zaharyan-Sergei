@@ -1,0 +1,193 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+
+.SignInBackground{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+.SignInPoppup{
+    box-sizing: border-box;
+    width: calc(600/1920 * 100vw);
+    height: calc(400/1920 * 100vw);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: calc(125/1920 * 100vw);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.SignInPoppupHeder{
+    margin-top: calc(26/1920 * 100vw);
+    margin-bottom: calc(17/1920 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(50/1920 * 100vw);
+    line-height: calc(50/1920 * 100vw);
+    color: #2979FF;
+}
+.SignInPoppupSubtitle{
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 700;
+font-size: calc(16/1920 * 100vw);
+line-height: calc(16/1920 * 100vw);
+margin-bottom: 3px;
+color: #787878;
+text-align: left;
+margin-left: calc(53/1920 * 100vw);
+}
+.SignInPoppupStyleInput{
+    box-sizing: border-box;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: calc(509/1920 * 100vw);
+    height: calc(49/1920 * 100vw);
+    border-radius: calc(17/1920 * 100vw);
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+.SignInPoppupStyleInput::placeholder{
+    color: #CCCCCC;
+}
+
+.SignInPoppupLogin{
+    margin-bottom: calc(11/1920 * 100vw);
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28/1920 * 100vw);
+    line-height: calc(36/1920 * 100vw);
+    color: #787878;
+}
+input[type="email" i] {
+    padding-left: calc(15/1920 * 100vw);
+}
+.SignInPoppupPassword{
+    margin-bottom: calc(52/1920 * 100vw);
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28/1920 * 100vw);
+    line-height: calc(36/1920 * 100vw);
+    color: #787878;
+}
+input[type="password" i] {
+    padding-left: calc(15/1920 * 100vw);
+}
+.SignInPoppupButtonEnter{
+    box-sizing: border-box;
+    width: calc(180/1920 * 100vw);
+    height: calc(52/1920 * 100vw);
+    border-radius: calc(15/1920 * 100vw);
+    background: #2979FF;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(24/1920 * 100vw);
+    line-height: calc(16/1920 * 100vw);
+    color: #FFFFFF;
+    border: 0;
+}
+@media screen and (max-device-width: 768px){
+.SignInBackground{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+.SignInPoppup{
+    box-sizing: border-box;
+    width: calc(600/768 * 100vw);
+    height: calc(400/768 * 100vw);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: calc(125/768 * 100vw);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.SignInPoppupHeder{
+    margin-top: calc(26/768 * 100vw);
+    margin-bottom: calc(17/768 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(50/768 * 100vw);
+    line-height: calc(50/768 * 100vw);
+    color: #2979FF;
+}
+.SignInPoppupSubtitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: calc(16/768 * 100vw);
+line-height: calc(16/768 * 100vw);
+margin-bottom: 3px;
+color: #787878;
+text-align: left;
+margin-left: calc(53/768 * 100vw);
+}
+.SignInPoppupStyleInput{
+    box-sizing: border-box;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: calc(509/768 * 100vw);
+    height: calc(49/768 * 100vw);
+    border-radius: calc(17/768 * 100vw);
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+.SignInPoppupStyleInput::placeholder{
+    color: #CCCCCC;
+}
+
+.SignInPoppupLogin{
+    margin-bottom: calc(11/768 * 100vw);
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28/768 * 100vw);
+    line-height: calc(36/768 * 100vw);
+    color: #787878;
+}
+input[type="email" i] {
+    padding-left: calc(15/768 * 100vw);
+}
+.SignInPoppupPassword{
+    margin-bottom: calc(52/768 * 100vw);
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(28/768 * 100vw);
+    line-height: calc(36/768 * 100vw);
+    color: #787878;
+}
+input[type="password" i] {
+    padding-left: calc(15/768 * 100vw);
+}
+.SignInPoppupButtonEnter{
+    box-sizing: border-box;
+    width: calc(180/768 * 100vw);
+    height: calc(52/768 * 100vw);
+    border-radius: calc(15/768 * 100vw);
+    background: #2979FF;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(24/768 * 100vw);
+    line-height: calc(16/768 * 100vw);
+    color: #FFFFFF;
+    border: 0;
+}
+}

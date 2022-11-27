@@ -1,0 +1,266 @@
+*{box-sizing: border-box;
+}
+.HeaderShopConteiner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;;
+    background-color: blueviolet;
+    background: linear-gradient(90deg, #9776c9 0%, #7581c5 100%);
+    height: calc(55/1920*100vw);
+}
+.HeaderShopLogoConteiner{
+    width: fit-content;
+    padding-left: calc(20/1920*100vw);
+    margin-left: calc(16/1920*100vw);
+    display: flex;
+    justify-content: center;
+    outline: none;
+    align-items: center;
+    text-decoration: none;
+    gap: 30px;
+}
+.HeaderShopSearchConteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: calc(48/1920*100vw);
+    background: #EDEDF0;
+    border-radius: calc(99/1920*100vw);
+    padding: calc(3/1920*100vw);
+}
+.HeaderShopSearchInput{
+    border: 0;
+    background-color: #EDEDF0;
+    width: calc(585/1920*100vw);
+    height: calc(32/1920*100vw);
+    margin-left: calc(11.5/1920*100vw);
+    margin-right: calc(3/1920*100vw);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(20/1920*100vw);
+    letter-spacing: 0.0075em;
+    color: #19191D;
+}
+.HeaderShopSearchInput:focus-visible {
+    border: 0;
+    outline: none;
+}
+.HeaderShopSearchInput::-webkit-search-cancel-button {
+    align-items: center;
+    -webkit-appearance: none;
+    background: url(../Img/Delete.svg);
+    background-size: calc(14/1920*100vw);
+    width: calc(14/1920*100vw);
+    height: calc(14/1920*100vw);
+    mask-image: #2979FF;
+    cursor: pointer;
+}
+.HeaderShopSearchButton{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    align-items: center;
+    width: calc(14/1920*100vw);
+    height: calc(14/1920*100vw);
+    margin-right: calc(14/1920*100vw);
+    margin-left: calc(3/1920*100vw);
+    cursor: pointer;
+}
+.HeaderShopSearchButtonImg *{
+    align-items: center;
+    padding-left: 0;
+    margin-left: 0;
+    width: calc(14/1920*100vw);
+    height: calc(14/1920*100vw);
+    fill: #2979FF;
+
+}
+.HeaderShopLoginConteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: calc(42/1920*100vw);
+    margin-left: calc(1/1920*100vw);
+    margin-right: calc(20/1920*100vw);
+}
+.HeaderShoploginButton{
+    display: flex;
+    justify-content: center;
+    width: calc(104/1920*100vw);
+    height: calc(40/1920*100vw);
+    border: calc(1/1920*100vw) solid #9DC2FF;
+    margin-left: calc(15/1920*100vw);
+    padding: calc(1/1920*100vw) calc(6/1920*100vw);
+    border-radius: calc(4/1920*100vw);
+    background-color: white;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(20/1920*100vw);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.0075em;
+    color: #2264D1;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.HeaderShoploginButtonSize{
+    width: calc(52/1920*100vw);
+    height: calc(40/1920*100vw);
+}
+.HeaderShopBasketButtonImg {
+    align-items: center;
+    padding-left: 0;
+    margin-left: 0;
+    width: calc(25/1920*100vw);
+    height: calc(25/1920*100vw);
+    
+}
+.HeaderShopBasketButtonImg *{
+    stroke: #2979FF;
+}
+
+@media screen and (max-device-width: 768px){
+
+    .HeaderShopConteiner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: calc(15/768*100vw) 0;
+        padding: calc(8/768*100vw);
+        justify-content: space-around;;
+        background-color: blueviolet;
+        background: linear-gradient(90deg, #9776c9 0%, #7581c5 100%);
+        height: fit-content;
+    }
+    .HeaderShopLogoConteiner{
+        width: 45%;
+        height: calc(30/768*100vw);
+        padding-left: calc(10/768*100vw);
+        margin-left: calc(10/768*100vw);
+        display: flex;
+        justify-content: start;
+        outline: none;
+        align-items: center;
+        text-decoration: none;
+        order: -1;
+    }
+    .HeaderShopSearchConteiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: calc(55/768*100vw);
+        background: #EDEDF0;
+        border-radius: calc(99/768*100vw);
+        padding: calc(3/768*100vw);
+        order: 1;
+    }
+    .HeaderShopSearchInput{
+        border: 0;
+        background-color: #EDEDF0;
+        width: calc(550/768*100vw);
+        height: calc(45/768*100vw);
+        margin-left: calc(11.5/768*100vw);
+        margin-right: calc(3/768*100vw);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(20/768*100vw);
+        letter-spacing: 0.0075em;
+        color: #19191D;
+    }
+    .HeaderShopSearchInput:focus-visible {
+        border: 0;
+        outline: none;
+    }
+    .HeaderShopSearchInput::-webkit-search-cancel-button {
+        align-items: center;
+        -webkit-appearance: none;
+        background: url(../Img/Delete.svg);
+        background-size: calc(20/768*100vw);
+        width: calc(20/768*100vw);
+        height: calc(20/768*100vw);
+        mask-image: #2979FF;
+        cursor: pointer;
+    }
+    .HeaderShopSearchButton{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        border: 0;
+        align-items: center;
+        width: calc(20/768*100vw);
+        height: calc(20/768*100vw);
+        margin-right: calc(10/768*100vw);
+        margin-left: calc(3/768*100vw);
+        cursor: pointer;
+    }
+    .HeaderShopSearchButtonImg *{
+        align-items: center;
+        padding-left: 0;
+        margin-left: 0;
+        width: calc(25/768*100vw);
+        height: calc(25/768*100vw);
+        fill: #2979FF;
+    
+    }
+    .HeaderShopLoginConteiner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        margin-left: calc(1/768*100vw);
+        margin-right: calc(20/768*100vw);
+    }
+    .HeaderShoploginButton{
+        display: flex;
+        justify-content: center;
+        width: calc(140/768*100vw);
+        height: calc(50/768*100vw);
+        border: calc(1/768*100vw) solid #9DC2FF;
+        margin-left: calc(15/768*100vw);
+        padding: calc(1/768*100vw) calc(2/768*100vw);
+        border-radius: calc(4/768*100vw);
+        background-color: white;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(20/768*100vw);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 0.0075em;
+        color: #2979FF;
+        cursor: pointer;
+        text-decoration: none;
+    
+    }
+    .HeaderShoploginButtonSize{
+        width: calc(75/768*100vw);
+        height: calc(50/768*100vw);
+    }
+    .HeaderShopBasketButtonImg {
+        align-items: center;
+        padding-left: 0;
+        margin-left: 0;
+        width: calc(20/768*100vw);
+        height: calc(20/768*100vw);
+        
+    }
+    .HeaderShopBasketButtonImg *{
+        stroke: #2979FF;
+    }
+
+}

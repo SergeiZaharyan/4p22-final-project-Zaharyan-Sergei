@@ -1,9 +1,6 @@
-
-.BodyShop{
-    background-color: #0000ff;
-}
 .BodyShopConteiner{
 width: 100%;
+margin-top: 10px;
 height: max-content;
 padding: 0 5vw 5vw 5vw;
 }
@@ -56,4 +53,68 @@ padding: 0 5vw 5vw 5vw;
 }
 .BodyShopCategoryButtonImg *{
     fill:  #9696A0;
+}
+
+@media screen and (max-device-width: 768px){
+
+.BodyShopConteiner{
+    width: 100%;
+    margin-top: 1px;
+    height: max-content;
+    padding: 0 3vw 3vw 3vw;
+}
+.BodyShopCategoryConteiner{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.BodyShopCardConteinerCard{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2.5vw 0;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.BodyShopCategoryButton{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    margin: calc(4/768*100vw) calc(4/768*100vw) calc(4/768*100vw) calc(4/768*100vw);
+    background: #FFFFFF;
+    border-radius: calc(4/768*100vw);
+    width: 35%;
+    height: calc(56/768*100vw);
+    border: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(18/768*100vw);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color:  #9696A0;
+    cursor: pointer;
+}
+.BodyShopCategoryButton:hover{
+    border: solid calc(2/768*100vw) #2979FF;
+}
+.BodyShopCategoryButton:focus {
+    border: solid calc(2/768*100vw) #2979FF;
+    color: #2979FF;   
+}
+.BodyShopCategoryButton:focus *{
+    fill:  #2979FF;
+}
+.BodyShopCategoryButtonImg {
+    width: calc(28/768*100vw);
+    height: calc(28/768*100vw);
+}
+.BodyShopCategoryButtonImg *{
+    fill:  #9696A0;
+}
+
 }
