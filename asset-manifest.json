@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-Zaharyan-Sergei/static/css/main.d089ebff.css",
+    "main.css": "/4p22-final-project-Zaharyan-Sergei/static/css/main.f92589bc.css",
     "main.js": "/4p22-final-project-Zaharyan-Sergei/static/js/main.2d838b60.js",
     "static/media/Diamond.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Diamond.51edd56af53f5978ed4428fa22176827.svg",
     "static/media/Twitter.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Twitter.85a2b36db42b298dda20d4283262aa94.svg",
@@ -12,11 +12,11 @@
     "static/media/FaceBook.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/FaceBook.9285c1c9c4b13159c360c95a6e52d2bc.svg",
     "static/media/Delete.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Delete.006793c134c6d0f34edcfccec0795433.svg",
     "static/media/Electric.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Electric.e35b4761eea4453f494c391e78c4e988.svg",
-    "main.d089ebff.css.map": "/4p22-final-project-Zaharyan-Sergei/static/css/main.d089ebff.css.map",
+    "main.f92589bc.css.map": "/4p22-final-project-Zaharyan-Sergei/static/css/main.f92589bc.css.map",
     "main.2d838b60.js.map": "/4p22-final-project-Zaharyan-Sergei/static/js/main.2d838b60.js.map"
   },
   "entrypoints": [
-    "static/css/main.d089ebff.css",
+    "static/css/main.f92589bc.css",
     "static/js/main.2d838b60.js"
   ]
 }
