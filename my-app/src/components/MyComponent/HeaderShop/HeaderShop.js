@@ -1,11 +1,13 @@
 import "./HeaderShop.css";
-import ImgSearch from "../Img/Vector.svg";
 import {ReactComponent as ButtonImgSearch} from "../Img/Vector.svg";
 import {ReactComponent as ButtonImgBasket} from "../Img/Basket.svg"
 import Logo from "../Logo/Logo"
 import { Link } from "react-router-dom";
 
-function HeaderShop () {
+function HeaderShop ({onChange}) {
+   const handleSearchChange = (event) => {
+onChange(event.target.value)
+   }
      return (
         <>
          <div className="HeaderShopConteiner">
@@ -14,7 +16,7 @@ function HeaderShop () {
             </Link>
 
             <div className="HeaderShopSearchConteiner">
-               <input type="search" placeholder="search" className="HeaderShopSearchInput" />
+               <input type="search" placeholder="search" className="HeaderShopSearchInput" onChange={handleSearchChange}/>
                <button className="HeaderShopSearchButton"> <ButtonImgSearch alt="search" className="HeaderShopSearchButtonImg" /> </button>
             </div>
             <div className="HeaderShopLoginConteiner"> 

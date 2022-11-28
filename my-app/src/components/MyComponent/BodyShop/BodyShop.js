@@ -5,8 +5,8 @@ import {ReactComponent as ImgCategoryDiamond} from "../Img/Diamond.svg";
 import Card from '../Card/Card';
 import {useEffect, useState} from 'react';
 
-function BodyShop () {
-    const [products, setProducts] =useState([]);
+function BodyShop ({search}) {
+    const [products, setProducts] = useState([]);
     useEffect(() =>{
         fetch('https://fakestoreapi.com/products/')
             .then((response) => response.json())
@@ -19,15 +19,21 @@ function BodyShop () {
     useEffect( () => {
             setFiltered(products)
         }, [products]);
+        console.log([products]);
 
-    function todoFilter (category){
-        if(category === 'all'){
+
+
+    function todoFilter (category, search){
+        if(category === 'all'||""){
             setFiltered(products)
         }else {
-            let newProducts = [...products].filter(item => item.category === category)
+            let newProducts = [...products].filter(item => (item.category || item.description) === (category || search))
             setFiltered(newProducts)
         };
+        
     }
+
+
      return (
         <div className="BodyShopConteiner">
             <div className="BodyShopCategoryConteiner"> 
