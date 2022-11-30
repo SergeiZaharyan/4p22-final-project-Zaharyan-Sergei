@@ -8,6 +8,8 @@
     background-color: blueviolet;
     background: linear-gradient(90deg, #9776c9 0%, #7581c5 100%);
     height: calc(55/1920*100vw);
+    position: relative;
+    z-index: 1
 }
 .HeaderShopLogoConteiner{
     width: fit-content;
@@ -88,6 +90,7 @@
     height: calc(42/1920*100vw);
     margin-left: calc(1/1920*100vw);
     margin-right: calc(20/1920*100vw);
+   
 }
 .HeaderShoploginButton{
     display: flex;
@@ -127,9 +130,26 @@
 .HeaderShopBasketButtonImg *{
     stroke: #2979FF;
 }
+.HeaderShoploginButtonSize:hover,
+.active{
+    border-color: #e471cb;
+    color: #e471cb;
+    background-color: #e471cb;
+}
+.HeaderShopBasket{
+    position: absolute;
+    top: calc(55/1920*100vw);
+    right: calc(55/1920*100vw);
+    width: calc(655/1920*100vw);
+    height: 100px;
+    border-radius: calc(15/1920*100vw);
+    z-index: 2;
+    background-color: rgba(185, 184, 184, 0.6);
+    
 
+}
 @media screen and (max-device-width: 768px){
-
+    
     .HeaderShopConteiner {
         width: 100%;
         display: flex;
@@ -141,6 +161,8 @@
         background-color: blueviolet;
         background: linear-gradient(90deg, #9776c9 0%, #7581c5 100%);
         height: fit-content;
+        position: relative;
+        z-index: 1;
     }
     .HeaderShopLogoConteiner{
         width: 45%;
@@ -262,5 +284,21 @@
     .HeaderShopBasketButtonImg *{
         stroke: #2979FF;
     }
-
+    .HeaderShoploginButtonSize:hover,
+    .active{
+        border-color: #e471cb;
+        color: #e471cb;
+        background-color: #e471cb;
+    }
+    .HeaderShopBasket{
+        position: absolute;
+        top: calc(136/768*100vw);
+        right: calc(10/768*100vw);
+        left: calc(8/768*100vw);
+        width: calc(750/768*100vw);
+        height: 100px;
+        border-radius: calc(15/768*100vw);
+        z-index: 2;
+        background-color: rgba(185, 184, 184, 0.6);
+    }
 }

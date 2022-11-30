@@ -93,99 +93,153 @@
     color: #2264D1;
     cursor: pointer;
 }
+.CardButtonColorRed{
+    color: #d65268;
+    border-color: #d65268;
+    font-size: calc(36/1920*100vw);
+    padding:  0;
+    line-height: calc(25/1920*100vw);
+    
+}
+.CardButtonColorGreen{
+    color: #7ec28d;
+    border-color: #7ec28d;
+    font-size: calc(36/1920*100vw);
+    padding:  0;
+    line-height: calc(25/1920*100vw);
+}
+.CardButtonSize{
+width: calc(30/1920*100vw);
+height: calc(32/1920*100vw);
+padding:  0;
+line-height: calc(32/1920*100vw);
+cursor: auto;
 
+}
+.CardButtonCounterConteiner{
+display: flex;
+width: 100%;
+justify-content: center;
+}
 @media screen and (max-device-width: 768px){
-    .CardConteiner{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-content: center;
-        width: calc(290/768*100vw);
-        height: calc(550/768*100vw);
-        box-shadow: 0px calc(2/768*100vw) calc(4/768*100vw) rgba(59, 69, 123, 0.2),
-         0px calc(4/768*100vw) calc(8/768*100vw) rgba(92, 107, 192, 0.2);
-        border-radius: calc(10/768*100vw);
-        padding: calc(16/768*100vw);
-        margin: 0.5vw;
-        cursor: pointer;
-    }
-    .CardImg{
-        width: calc(260/768*100vw);
-        height: calc(260/768*100vw);
-        border-radius: calc(8/768*100vw);
-    }
-    .CardDescription{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        width: calc(260/768*100vw);
-        height: calc(80/768*100vw);
-        margin-top: calc(12/768*100vw);
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: calc(18/768*100vw);
-        letter-spacing: 0.0275em;
-        line-height: calc(20/768*100vw);
-        color: #19191D;
-        text-align: left;
-    }
-    .CardPrice{
-        width: calc(260/768*100vw);
-        height: calc(42/768*100vw);
-        margin-top: calc(10/768*100vw);
-        margin-bottom: 0;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: calc(26/768*100vw);
-        align-items: center;
-        color: rgba(0, 0, 0, 0.87);
-        text-align: left;
-    }
-    .CardTitle{
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        width: calc(260/768*100vw);
-        height: calc(24/768*100vw);
-        margin-top: calc(18/768*100vw);
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: calc(16/768*100vw);
-        text-overflow: ellipsis;
-        line-height: calc(20/768*100vw);
-        text-align: left;
-        align-items: center;
-        letter-spacing: 0.018em;
-        color: #787885;
-    }
-    .CardDescription:hover{
-        color: #2264D1;
-    }
-    .CardTitle:hover{
-        color: #2264D1;
-    }
-    .CardButton{
-        width: calc(100/768*100vw);
-        height: calc(45/768*100vw);
-        margin-top: calc(19/768*100vw);
-        background: #FFFFFF;
-        border: calc(3/768*100vw) solid #9DC2FF;
-        border-radius: calc(8/768*100vw);
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: calc(20/768*100vw);
-        align-items: center;
-        align-self: flex-end;
-        letter-spacing: 0.018em;
-        color: #2264D1;
-        cursor: pointer;
-    }
-
+.CardConteiner{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: calc(290/768*100vw);
+    height: calc(550/768*100vw);
+    box-shadow: 0px calc(2/768*100vw) calc(4/768*100vw) rgba(59, 69, 123, 0.2),
+        0px calc(4/768*100vw) calc(8/768*100vw) rgba(92, 107, 192, 0.2);
+    border-radius: calc(10/768*100vw);
+    padding: calc(16/768*100vw);
+    margin: 0.5vw;
+    cursor: pointer;
+}
+.CardImg{
+    width: calc(260/768*100vw);
+    height: calc(260/768*100vw);
+    border-radius: calc(8/768*100vw);
+}
+.CardDescription{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: calc(260/768*100vw);
+    height: calc(80/768*100vw);
+    margin-top: calc(12/768*100vw);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(18/768*100vw);
+    letter-spacing: 0.0275em;
+    line-height: calc(20/768*100vw);
+    color: #19191D;
+    text-align: left;
+}
+.CardPrice{
+    width: calc(260/768*100vw);
+    height: calc(42/768*100vw);
+    margin-top: calc(10/768*100vw);
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(26/768*100vw);
+    align-items: center;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: left;
+}
+.CardTitle{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: calc(260/768*100vw);
+    height: calc(24/768*100vw);
+    margin-top: calc(18/768*100vw);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16/768*100vw);
+    text-overflow: ellipsis;
+    line-height: calc(20/768*100vw);
+    text-align: left;
+    align-items: center;
+    letter-spacing: 0.018em;
+    color: #787885;
+}
+.CardDescription:hover{
+    color: #2264D1;
+}
+.CardTitle:hover{
+    color: #2264D1;
+}
+.CardButton{
+    width: calc(100/768*100vw);
+    height: calc(45/768*100vw);
+    margin-top: calc(19/768*100vw);
+    background: #FFFFFF;
+    border: calc(3/768*100vw) solid #9DC2FF;
+    border-radius: calc(8/768*100vw);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(20/768*100vw);
+    align-items: center;
+    align-self: flex-end;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #2264D1;
+    cursor: pointer;
+}
+.CardButtonColorRed{
+    color: #d65268;
+    border-color: #d65268;
+    padding:  0;
+    font-size: calc(45/768*100vw);
+    
+}
+.CardButtonColorGreen{
+    color: #7ec28d;
+    border-color: #7ec28d;
+    padding:  0;
+    font-size: calc(45/768*100vw);
+}
+.CardButtonSize{
+    width: calc(30/768*100vw);
+    height: calc(45/768*100vw);
+    text-align: center;
+    cursor: auto;
+    padding:  0;
+    line-height: calc(35/768*100vw);
+    font-size: calc(30/768*100vw);
+}
+.CardButtonCounterConteiner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 }

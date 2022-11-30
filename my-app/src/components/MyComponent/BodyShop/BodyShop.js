@@ -19,49 +19,62 @@ function BodyShop ({search}) {
     useEffect( () => {
             setFiltered(products)
         }, [products]);
-        console.log([products]);
-
-
+        
+     
+    //     useEffect(() => {       
+    //         todoFilter(`all`, search);
+    //  });
 
     function todoFilter (category, search){
-        if(category === 'all'||""){
+        if((!category || category === 'all') && !search){
             setFiltered(products)
-        }else {
-            let newProducts = [...products].filter(item => (item.category || item.description) === (category || search))
+            return;
+        }
+        
+        if(category) {
+            let newProducts = [...products].filter(
+            (item) => (item.category || item.description) === category,
+                );
             setFiltered(newProducts)
         };
-        
+        if(search) {
+            const newProducts = products
+            .filter(v => ((v.title).toLowerCase()).indexOf(search.toLowerCase()) + 1 || ((v.description).toLowerCase()).indexOf(search.toLowerCase()) + 1)
+            setFiltered(newProducts)
+        };
     }
 
+        
 
      return (
         <div className="BodyShopConteiner">
             <div className="BodyShopCategoryConteiner"> 
-            <button className="BodyShopCategoryButton" onClick= {() => todoFilter(`all`)}> ALL</button>
-                <button className="BodyShopCategoryButton"  onClick= {() => todoFilter(`women's clothing`)}>
+            <button className="BodyShopCategoryButton" onClick= {() => todoFilter(`all`, search)}> ALL</button>
+                <button className="BodyShopCategoryButton"  onClick= {() => todoFilter(`women's clothing`, search)}>
                     <ImgCategoryHanger alt="Hanger" className="BodyShopCategoryButtonImg" />
                     Women's clothing
                 </button>
 
-                <button className="BodyShopCategoryButton" onClick= {() => todoFilter(`men's clothing`)}>
+                <button className="BodyShopCategoryButton" onClick= {() => todoFilter(`men's clothing`, search)}>
                     <ImgCategoryHanger alt="Hanger" className="BodyShopCategoryButtonImg" />
                     Men's clothing
                 </button>
 
-                <button className="BodyShopCategoryButton" onClick= {() => todoFilter('electronics')}>
+                <button className="BodyShopCategoryButton" onClick= {() => todoFilter('electronics', search)}>
                     <ImgCategoryElectric alt="Electric" className="BodyShopCategoryButtonImg" />
                     Electronics
                 </button>
 
-                <button className="BodyShopCategoryButton" onClick= {() => todoFilter('jewelery')}>
+                <button className="BodyShopCategoryButton" onClick= {() => todoFilter('jewelery', search)}>
                     <ImgCategoryDiamond alt="Diamond" className="BodyShopCategoryButtonImg" />
                     Jsewelry
                 </button>
             </div>
             <div className="BodyShopCardConteinerCard"> 
            {
-           filtered.map((item) => {
-                return <Card key={item.id}
+           filtered.map((item, index) => {
+                return <Card key={index}
+                            id={item.id}
                              title={item.title}
                              image={item.image}
                              description={item.description}
