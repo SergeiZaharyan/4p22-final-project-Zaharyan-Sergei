@@ -1,0 +1,27 @@
+.Basket{
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(20/1920*100vw) 0 0 0;
+    gap: calc(20/1920*100vw);
+    width: 97%;
+    padding: calc(20/1920*100vw);
+    height: fit-content;
+    border-radius: calc(15/1920*100vw);
+    background-color: rgba(185, 184, 184, 0.6);
+    
+
+}
+@media screen and (max-device-width: 768px){
+
+    .Basket{
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(20/768*100vw) 0 0 0;
+    gap: calc(20/768*100vw);
+    width: 97%;
+    padding: calc(20/768*100vw);
+    height: fit-content;
+    border-radius: calc(15/768*100vw);
+    background-color: rgba(185, 184, 184, 0.6);
+    }
+}

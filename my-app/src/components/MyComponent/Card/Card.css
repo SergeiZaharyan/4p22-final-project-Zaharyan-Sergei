@@ -145,19 +145,20 @@ justify-content: center;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     width: calc(260/768*100vw);
-    height: calc(80/768*100vw);
+    height: calc(72/768*100vw);
     margin-top: calc(12/768*100vw);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: calc(18/768*100vw);
     letter-spacing: 0.0275em;
-    line-height: calc(20/768*100vw);
+    line-height: calc(23/768*100vw);
     color: #19191D;
     text-align: left;
+    padding: calc(3/768*100vw) 0;
 }
 .CardPrice{
     width: calc(260/768*100vw);

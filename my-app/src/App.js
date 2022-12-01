@@ -4,6 +4,7 @@ import FooterShop from './components/MyComponent/FooterShop/FooterShop';
 import HeaderShop from './components/MyComponent/HeaderShop/HeaderShop';
 import SignIn from './pages/SignIn/SignIn';
 import SignUp from './pages/SignUp/SignUp';
+import BasketPages from './pages/Basket/Basket';
 
 import {Routes, Route} from 'react-router-dom'
 import { useState } from 'react';
@@ -20,6 +21,8 @@ function App() {
           <Route index path="/" element={<BodyShop search={search} />} />
           <Route  path="/signIn" element={<SignIn/>} />
           <Route  path='/signUp' element={<SignUp/>} /> 
+          <Route  path='/basket' element={<BasketPages/>} /> 
+          
         </Routes>
       </div>
       <FooterShop className="AppFooterShop" />
