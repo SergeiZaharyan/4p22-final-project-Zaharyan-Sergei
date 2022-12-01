@@ -58,7 +58,6 @@ function Card({id, title, description, price, image }) {
             </div>
             )}
             <CardPopup 
-            id={id}
             title={title}
             image={image}
             description={description}

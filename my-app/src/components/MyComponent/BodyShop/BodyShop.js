@@ -4,33 +4,28 @@ import {ReactComponent as ImgCategoryHanger} from "../Img/Hanger.svg";
 import {ReactComponent as ImgCategoryDiamond} from "../Img/Diamond.svg";
 import Card from '../Card/Card';
 import {useEffect, useState} from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../../../store/products/productsSlise";
+
 
 function BodyShop ({search}) {
-    const [products, setProducts] = useState([]);
-    useEffect(() =>{
-        fetch('https://fakestoreapi.com/products/')
-            .then((response) => response.json())
-            .then((result) => {
-                setProducts(result);
-            })
-    }, []);
+    const [products, isLoading] = useSelector((state) => [state.products.entities, state.products.loading]);
+    const dispatch = useDispatch();
     const [filtered, setFiltered] = useState(products);
+
+    useEffect(() =>{
+        dispatch(getProducts());
+    }, []);
 
     useEffect( () => {
             setFiltered(products)
         }, [products]);
         
-     
-    //     useEffect(() => {       
-    //         todoFilter(`all`, search);
-    //  });
-
     function todoFilter (category, search){
         if((!category || category === 'all') && !search){
             setFiltered(products)
             return;
         }
-        
         if(category) {
             let newProducts = [...products].filter(
             (item) => (item.category || item.description) === category,
@@ -42,9 +37,7 @@ function BodyShop ({search}) {
             .filter(v => ((v.title).toLowerCase()).indexOf(search.toLowerCase()) + 1 || ((v.description).toLowerCase()).indexOf(search.toLowerCase()) + 1)
             setFiltered(newProducts)
         };
-    }
-
-        
+    } 
 
      return (
         <div className="BodyShopConteiner">
@@ -72,7 +65,7 @@ function BodyShop ({search}) {
             </div>
             <div className="BodyShopCardConteinerCard"> 
            {
-           filtered.map((item, index) => {
+           !isLoading && filtered.map((item, index) => {
                 return <Card key={index}
                             id={item.id}
                              title={item.title}

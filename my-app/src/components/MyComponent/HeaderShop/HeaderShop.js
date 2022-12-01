@@ -4,7 +4,7 @@ import {ReactComponent as ButtonImgBasket} from "../Img/Basket.svg"
 import Logo from "../Logo/Logo"
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {useDispatch, useSelector } from "react-redux";
 import { clearBasket } from "../../../store/basket/basketSlice";
 
 function HeaderShop ({onChange}) {
