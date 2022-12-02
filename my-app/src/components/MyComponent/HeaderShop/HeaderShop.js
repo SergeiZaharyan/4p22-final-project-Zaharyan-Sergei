@@ -3,7 +3,6 @@ import {ReactComponent as ButtonImgSearch} from "../Img/Vector.svg";
 import {ReactComponent as ButtonImgBasket} from "../Img/Basket.svg"
 import Logo from "../Logo/Logo"
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 function HeaderShop ({onChange}) {
    
@@ -11,7 +10,7 @@ function HeaderShop ({onChange}) {
 onChange(event.target.value)
    };
    
-   let [basketOpen, setBasketOpen] = useState(false);
+   
      return (
         <>
          <div className="HeaderShopConteiner">
@@ -25,17 +24,16 @@ onChange(event.target.value)
                className="HeaderShopSearchInput" 
                onChange={handleSearchChange}
                />
-               <button className="HeaderShopSearchButton"> 
+               <div className="HeaderShopSearchContainer"> 
                <ButtonImgSearch alt="search" className="HeaderShopSearchButtonImg" /> 
-               </button>
+               </div>
             </div>
             <div className="HeaderShopLoginConteiner"> 
                <Link className="HeaderShoploginButton" to="/" >Main</Link>
                <Link className="HeaderShoploginButton HeaderShoploginButtonSize"to="/basket">
                   <ButtonImgBasket className="HeaderShopBasketButtonImg" />
                </Link> 
-               <Link className="HeaderShoploginButton" to="/signin">Sign in</Link> 
-               <Link className="HeaderShoploginButton" to="/signup">Sign up</Link>
+               <Link className="HeaderShoploginButton" to="/Feedback">Feedback</Link>
             </div>
             
         </div>

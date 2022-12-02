@@ -58,7 +58,7 @@
     mask-image: #2979FF;
     cursor: pointer;
 }
-.HeaderShopSearchButton{
+.HeaderShopSearchContainer{
     display: flex;
     justify-content: center;
     padding-left: 0;
@@ -198,7 +198,7 @@
         mask-image: #2979FF;
         cursor: pointer;
     }
-    .HeaderShopSearchButton{
+    .HeaderShopSearchContainer{
         display: flex;
         justify-content: center;
         padding-left: 0;

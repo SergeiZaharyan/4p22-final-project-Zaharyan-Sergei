@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 
 
 function BasketPages () {
-   const products = useSelector(state => state.products.entities);
+const products = useSelector(state => state.products.entities);
 const basket = useSelector(state => state.basket);
 
 return(
@@ -15,11 +15,12 @@ return(
          .filter((product) => !!basket[product.id])
          .map((item, index) => {
           return <Card key={index}
-                      id={item.id}
+                       id={item.id}
                        title={item.title}
                        image={item.image}
                        description={item.description}
-                       price={item.price}> </Card>
+                       price={item.price}> 
+                 </Card>
        })}
     </div>
  )}

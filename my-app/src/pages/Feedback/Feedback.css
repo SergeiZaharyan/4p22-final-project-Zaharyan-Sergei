@@ -9,7 +9,7 @@
     font-family: 'Red Hat Display', sans-serif;
     box-sizing: border-box;
 }
-.SignUpBackground{
+.FeedbackBackground{
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -17,10 +17,10 @@
     background-color: #FFFFFF;
     margin-bottom: calc(30/1920 * 100vw);
 }
-.SignUpPoppup{
+.FeedbackPoppup{
     box-sizing: border-box;
     width: calc(600/1920 * 100vw);
-    height: calc(875/1920 * 100vw);
+    height: fit-content;
     margin-left: 0;
     margin-right: 0;
     margin-top: calc(50/1920 * 100vw);
@@ -30,7 +30,7 @@
     align-content: center;
     text-align: center;
 }
-.SignUpPoppupHeader{
+.FeedbackPoppupHeader{
     margin-top: calc(26/1920 * 100vw);
     margin-bottom: calc(15/1920 * 100vw);
     font-style: normal;
@@ -39,7 +39,7 @@
     line-height: calc(50/1920 * 100vw);
     color: #2979FF;
 }
-.SignUpPoppupSubtitle{
+.FeedbackPoppupSubtitle{
     width: calc(200/1920 * 100vw);
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -49,7 +49,7 @@
     color: #787878;
     text-align: left;
 }
-.SignUpPoppupStyleInput{
+.FeedbackPoppupStyleInput{
     box-sizing: border-box;
     margin-left: 0 auto;
     margin-right: 0 auto;
@@ -59,10 +59,10 @@
     background: #FFFFFF;
     border: 2px solid #787878;
 }
-.SignUpPoppupStyleInput::placeholder{
+.FeedbackPoppupStyleInput::placeholder{
     color: #CCCCCC;
 }
-.SignUpPoppupLogin{
+.FeedbackPoppupLogin{
     margin-bottom: calc(11/1920 * 100vw);
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -74,7 +74,7 @@
 input[type="email" i] {
     padding-left: calc(15/1920 * 100vw);
 }
-.SignUpPoppupPassword{
+.FeedbackPoppupName{
     margin-bottom: calc(11/1920 * 100vw);
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -83,10 +83,10 @@ input[type="email" i] {
     line-height: calc(36/1920 * 100vw);
     color: #787878;
 }
-input[type="password" i] {
+input[type="text" i] {
     padding-left: calc(15/1920 * 100vw);
 }
-.SignUpPoppupConteinerButtonRadio{
+.FeedbackPoppupConteinerButtonRadio{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -95,7 +95,7 @@ input[type="password" i] {
     width: 300px;
     box-sizing: border-box;
 }
-.SignUpPoppupButtonRadioLabel{
+.FeedbackPoppupButtonRadioLabel{
     display: flex;
     align-items: center;
     margin-left: calc(45/1920 * 100vw);
@@ -107,7 +107,7 @@ input[type="password" i] {
     line-height: calc(16/1920 * 100vw);
     color: #787878;
 }
-.SignUpConteinerButtonRadioButtonRadio{
+.FeedbackConteinerButtonRadioButtonRadio{
     margin-right: calc(9/1920 * 100vw);
     margin-left: 0;
     margin-bottom: calc(9/1920 * 100vw);
@@ -142,24 +142,7 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
     transform: scale(1);
 }
-.SignUpPoppupTextarea::placeholder{
-    color:#CCCCCC;
-}
-.SignUpPoppupTextarea{
-    resize: none;
-    margin-bottom: calc(24/1920 * 100vw);
-    width: calc(509/1920 * 100vw);
-    height: calc(246/1920 * 100vw);
-    border-radius: calc(17/1920 * 100vw);
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(28/1920 * 100vw);
-    line-height: calc(36/1920 * 100vw);
-    border: calc(2/1920 * 100vw) solid #787878;
-    color: #787878;
-}
-.SignUpSubscription{
+.FeedbackSubscription{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -168,7 +151,7 @@ input[type="radio"]:checked::before {
     width: 100%;
     height: calc(24/1920 * 100vw);
 }
-.SignUpPoppupStyleInputCheckbox{
+.FeedbackPoppupStyleInputCheckbox{
     box-sizing: border-box;
     width: calc(24/1920 * 100vw);
     height: calc(24/1920 * 100vw); 
@@ -206,7 +189,7 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     transform: scale(1);
 }
-.SignUpPoppupSubtitleDimensions{
+.FeedbackPoppupSubtitleDimensions{
     width: fit-content;
     margin-left: 0;
     margin-top: 0;
@@ -217,9 +200,10 @@ input[type="checkbox"]:checked::before {
     font-size: calc(14/1920 * 100vw);
     line-height: calc(16/1920 * 100vw);
 }
-.SignUpPoppupButtonEnter{
+.FeedbackPoppupButtonEnter{
     box-sizing: border-box;
     margin-top: calc(56/1920 * 100vw);
+    margin-bottom: calc(56/1920 * 100vw);
     width: calc(180/1920 * 100vw);
     height: calc(52/1920 * 100vw);
     border-radius: calc(15/1920 * 100vw);
@@ -232,10 +216,10 @@ input[type="checkbox"]:checked::before {
     color: #FFFFFF;
     border-width: 0;
 }
-.SignUpError{
+.FeedbackError{
     border: 2px solid #EE2424;
 }
-.SignUpPoppupContainerSubtitle{
+.FeedbackPoppupContainerSubtitle{
     display: flex;
     justify-content: space-between;
     width: calc(510/1920 * 100vw);
@@ -250,7 +234,7 @@ input[type="checkbox"]:checked::before {
     text-align: left;
     margin-left: calc(33/1920 * 100vw);
 }
-.SignUpPoppupSubtitleErorr{
+.FeedbackPoppupSubtitleErorr{
     width: calc(300/1920 * 100vw);
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -260,14 +244,11 @@ input[type="checkbox"]:checked::before {
     color: #EE2424;
     text-align: end;
 }
-.SignUpBlockOff{
-    display: none;
-}
-   
+
 
 @media screen and (max-device-width: 768px){
     
-.SignUpBackground{
+.FeedbackBackground{
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -275,9 +256,9 @@ input[type="checkbox"]:checked::before {
     background-color: #FFFFFF;
     margin-bottom: calc(30/768 * 100vw);
 }
-.SignUpPoppup{
+.FeedbackPoppup{
     box-sizing: border-box;
-    width: calc(600/768 * 100vw);
+    width: fit-content;
     height: calc(875/768 * 100vw);
     margin-left: 0;
     margin-right: 0;
@@ -288,7 +269,7 @@ input[type="checkbox"]:checked::before {
     align-content: center;
     text-align: center;
 }
-.SignUpPoppupHeader{
+.FeedbackPoppupHeader{
     margin-top: calc(26/768 * 100vw);
     margin-bottom: calc(15/768 * 100vw);
     font-style: normal;
@@ -297,7 +278,7 @@ input[type="checkbox"]:checked::before {
     line-height: calc(50/768 * 100vw);
     color: #2979FF;
 }
-.SignUpPoppupSubtitle{
+.FeedbackPoppupSubtitle{
 width: calc(200/768 * 100vw);
 font-family: 'Red Hat Display';
 font-style: normal;
@@ -307,7 +288,7 @@ line-height: calc(16/768 * 100vw);
 color: #787878;
 text-align: left;
 }
-.SignUpPoppupStyleInput{
+.FeedbackPoppupStyleInput{
     box-sizing: border-box;
     margin-left: 0 auto;
     margin-right: 0 auto;
@@ -316,10 +297,10 @@ text-align: left;
     background: #FFFFFF;
     border: 2px solid #787878;
 }
-.SignUpPoppupStyleInput::placeholder{
+.FeedbackPoppupStyleInput::placeholder{
     color: #CCCCCC;
 }
-.SignUpPoppupLogin{
+.FeedbackPoppupLogin{
     margin-bottom: calc(11/768 * 100vw);
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -331,7 +312,7 @@ text-align: left;
 input[type="email" i] {
     padding-left: calc(15/768 * 100vw);
 }
-.SignUpPoppupPassword{
+.FeedbackPoppupName{
     margin-bottom: calc(11/768 * 100vw);
     font-family: 'Red Hat Display';
     font-style: normal;
@@ -340,10 +321,10 @@ input[type="email" i] {
     line-height: calc(36/768 * 100vw);
     color: #787878;
 }
-input[type="password" i] {
+input[type="text" i] {
     padding-left: calc(15/768 * 100vw);
 }
-.SignUpPoppupConteinerButtonRadio{
+.FeedbackPoppupConteinerButtonRadio{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -352,7 +333,7 @@ input[type="password" i] {
     width: 300px;
     box-sizing: border-box;
 }
-.SignUpPoppupButtonRadioLabel{
+.FeedbackPoppupButtonRadioLabel{
     display: flex;
     align-items: center;
     margin-left: calc(45/768 * 100vw);
@@ -364,7 +345,7 @@ input[type="password" i] {
     line-height: calc(16/768 * 100vw);
     color: #787878;
 }
-.SignUpConteinerButtonRadioButtonRadio{
+.FeedbackConteinerButtonRadioButtonRadio{
     margin-right: calc(9/768 * 100vw);
     margin-left: 0;
     margin-bottom: calc(9/768 * 100vw);
@@ -399,23 +380,7 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
     transform: scale(1);
 }
-.SignUpPoppupTextarea::placeholder{
-    color:#CCCCCC;
-}
-.SignUpPoppupTextarea{
-    resize: none;
-    margin-bottom: calc(24/768 * 100vw);
-    width: calc(509/768 * 100vw);
-    height: calc(246/768 * 100vw);
-    font-family: 'Red Hat Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc(28/768 * 100vw);
-    line-height: calc(36/768 * 100vw);
-    border: calc(2/768 * 100vw) solid #787878;
-    color: #787878;
-}
-.SignUpSubscription{
+.FeedbackSubscription{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -424,7 +389,7 @@ input[type="radio"]:checked::before {
     width: 100%;
     height: calc(24/768 * 100vw);
     }
-.SignUpPoppupStyleInputCheckbox{
+.FeedbackPoppupStyleInputCheckbox{
     box-sizing: border-box;
     width: calc(24/768 * 100vw);
     height: calc(24/768 * 100vw); 
@@ -463,7 +428,7 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     transform: scale(1);
     }
-.SignUpPoppupSubtitleDimensions{
+.FeedbackPoppupSubtitleDimensions{
     width: fit-content;
     margin-left: 0;
     margin-top: 0;
@@ -474,9 +439,10 @@ input[type="checkbox"]:checked::before {
     font-size: calc(18/768 * 100vw);
     line-height: calc(16/768 * 100vw);
     }
-.SignUpPoppupButtonEnter{
+.FeedbackPoppupButtonEnter{
     box-sizing: border-box;
     margin-top: calc(56/768 * 100vw);
+    margin-bottom: calc(56/768 * 100vw);
     width: calc(180/768 * 100vw);
     height: calc(52/768 * 100vw);
     border-radius: calc(15/768 * 100vw);
@@ -489,10 +455,10 @@ input[type="checkbox"]:checked::before {
     color: #FFFFFF;
     border-width: 0;
     }
-    .SignUpError{
+    .FeedbackError{
     border: 2px solid #EE2424;
     }
-    .SignUpPoppupContainerSubtitle{
+    .FeedbackPoppupContainerSubtitle{
     display: flex;
     justify-content: space-between;
     width: calc(510/768 * 100vw);
@@ -507,7 +473,7 @@ input[type="checkbox"]:checked::before {
     text-align: left;
     margin-left: calc(33/768 * 100vw);
     }
-    .SignUpPoppupSubtitleErorr{
+    .FeedbackPoppupSubtitleErorr{
         width: calc(300/768 * 100vw);
         font-family: 'Red Hat Display';
         font-style: normal;
@@ -517,7 +483,5 @@ input[type="checkbox"]:checked::before {
         color: #EE2424;
         text-align: end;
     }
-    .SignUpBlockOff{
-        display: none;
-    }
+    
 }
