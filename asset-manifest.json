@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-Zaharyan-Sergei/static/css/main.a86a5ba8.css",
-    "main.js": "/4p22-final-project-Zaharyan-Sergei/static/js/main.a950a3bb.js",
+    "main.css": "/4p22-final-project-Zaharyan-Sergei/static/css/main.e53c27c7.css",
+    "main.js": "/4p22-final-project-Zaharyan-Sergei/static/js/main.e9a5d94f.js",
     "static/media/Diamond.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Diamond.51edd56af53f5978ed4428fa22176827.svg",
     "static/media/Twitter.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Twitter.85a2b36db42b298dda20d4283262aa94.svg",
     "static/media/Gmail.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Gmail.7d254a22fc2a8e18626adb803fe1145e.svg",
@@ -12,11 +12,11 @@
     "static/media/FaceBook.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/FaceBook.9285c1c9c4b13159c360c95a6e52d2bc.svg",
     "static/media/Delete.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Delete.006793c134c6d0f34edcfccec0795433.svg",
     "static/media/Electric.svg": "/4p22-final-project-Zaharyan-Sergei/static/media/Electric.e35b4761eea4453f494c391e78c4e988.svg",
-    "main.a86a5ba8.css.map": "/4p22-final-project-Zaharyan-Sergei/static/css/main.a86a5ba8.css.map",
-    "main.a950a3bb.js.map": "/4p22-final-project-Zaharyan-Sergei/static/js/main.a950a3bb.js.map"
+    "main.e53c27c7.css.map": "/4p22-final-project-Zaharyan-Sergei/static/css/main.e53c27c7.css.map",
+    "main.e9a5d94f.js.map": "/4p22-final-project-Zaharyan-Sergei/static/js/main.e9a5d94f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a86a5ba8.css",
-    "static/js/main.a950a3bb.js"
+    "static/css/main.e53c27c7.css",
+    "static/js/main.e9a5d94f.js"
   ]
 }
